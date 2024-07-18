@@ -15,7 +15,6 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import ImageUpload from "./ImageUpload";
-import Invoice from "layouts/billing/components/Invoice";
 import MDButton from "components/MDButton";
 import { Avatar, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 
