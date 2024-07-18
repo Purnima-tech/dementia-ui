@@ -123,11 +123,20 @@ export default function App() {
       zIndex={99}
       color="dark"
       sx={{ cursor: "pointer" }}
-      onClick={handleConfiguratorOpen}
+      // onClick={handleConfiguratorOpen}
     >
-      <Icon fontSize="small" color="inherit">
+               
+   
+   <df-messenger project-id="dogwood-seeker-429502-v9" agent-id="d97a8562-fb2a-41e4-a69e-4318a6a3c361" language-code="en" max-query-length="-1" location="global">
+     <df-messenger-chat-bubble chat-title="dementia helper">
+     </df-messenger-chat-bubble>
+   </df-messenger>
+     
+   
+   
+      {/* <Icon fontSize="small" color="inherit">
         settings
-      </Icon>
+      </Icon> */}
     </MDBox>
   );
 
@@ -170,6 +179,7 @@ export default function App() {
             onMouseLeave={handleOnMouseLeave}
           />
           <Configurator />
+
           {configsButton}
         </>
       )}
