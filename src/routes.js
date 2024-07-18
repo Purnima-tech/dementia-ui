@@ -43,10 +43,10 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
+    name: "Contacts",
+    key: "contacts",
     icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tables",
+    route: "/contacts",
     component: <Tables />,
   },
   {
