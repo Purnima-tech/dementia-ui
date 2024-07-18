@@ -39,7 +39,7 @@ function Basic() {
       <Card >
         <MDBox pt={3} pl={3}>
           <MDTypography variant='title'>
-            Registeration
+            Registration
           </MDTypography>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
