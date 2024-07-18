@@ -1,0 +1,36 @@
+.chat-wrapper.expanded {
+    border: 1px solid #aaa;
+}
+
+.upload-button {
+    background: #fff;
+    border: 0px;
+    /* max-width: 100px; */
+    margin: auto;
+}
+
+.upload-button img {
+    max-width: 125px;
+    height: auto;
+    width: auto;
+}
+
+.upload-container {
+    justify-content: center;
+    border: 1px dashed #ddd;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    justify-content: center;
+    /* border: 1px dashed #ddd; */
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}

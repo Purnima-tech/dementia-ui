@@ -31,6 +31,7 @@ import SignUp from "layouts/authentication/sign-up";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
+import Search from "layouts/search";
 
 const routes = [
   {
@@ -59,19 +60,19 @@ const routes = [
   },
   // {
   //   type: "collapse",
-  //   name: "RTL",
-  //   key: "rtl",
+  //   name: "notifications",
+  //   key: "notifications",
   //   icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-  //   route: "/rtl",
-  //   component: <RTL />,
+  //   route: "/notification",
+  //   component: <Notifications />,
   // },
   {
     type: "collapse",
     name: "Find Person",
-    key: "notifications",
+    key: "search",
     icon: <Icon fontSize="small">search</Icon>,
     route: "/search",
-    component: <Notifications />,
+    component: <Search />,
   },
   {
     type: "collapse",

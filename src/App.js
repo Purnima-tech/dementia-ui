@@ -1,5 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 
+import './assets/styles/style.css'; 
+
 // react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
