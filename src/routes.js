@@ -67,10 +67,10 @@ const routes = [
   // },
   {
     type: "collapse",
-    name: "Notifications",
+    name: "Find Person",
     key: "notifications",
-    icon: <Icon fontSize="small">notifications</Icon>,
-    route: "/notifications",
+    icon: <Icon fontSize="small">search</Icon>,
+    route: "/search",
     component: <Notifications />,
   },
   {

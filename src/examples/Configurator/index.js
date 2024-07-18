@@ -116,6 +116,7 @@ function Configurator() {
 
   return (
     <ConfiguratorRoot variant="permanent" ownerState={{ openConfigurator }}>
+
       <MDBox
         display="flex"
         justifyContent="space-between"
