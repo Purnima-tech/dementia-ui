@@ -27,6 +27,7 @@ import BasicLayout from "layouts/authentication/components/BasicLayout";
 
 // Images
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -34,45 +35,50 @@ function Basic() {
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   return (
-    <BasicLayout image={bgImage}>
-      <Card>
-        <MDBox
-          variant="gradient"
-          bgColor="info"
-          borderRadius="lg"
-          coloredShadow="info"
-          mx={2}
-          mt={-3}
-          p={2}
-          mb={1}
-          textAlign="center"
-        >
-          <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Sign in
+    <DashboardLayout >
+      <Card >
+        <MDBox pt={3} pl={3}>
+          <MDTypography variant='title'>
+            Registeration
           </MDTypography>
-          <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
-            <Grid item xs={2}>
-              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
-                <FacebookIcon color="inherit" />
-              </MDTypography>
-            </Grid>
-            <Grid item xs={2}>
-              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
-                <GitHubIcon color="inherit" />
-              </MDTypography>
-            </Grid>
-            <Grid item xs={2}>
-              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
-                <GoogleIcon color="inherit" />
-              </MDTypography>
-            </Grid>
-          </Grid>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
           <MDBox component="form" role="form">
-            <MDBox mb={2}>
-              <MDInput type="email" label="Email" fullWidth />
-            </MDBox>
+            <Grid container spacing={2} >
+  <Grid item xs={6}>
+    <MDInput type="text" label="First Name" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="Last Name" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="Last Name" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="date" label="Date Of Birth" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="Address Line1" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="text" label="Address Line2" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="Address Line3" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="City" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="State" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="Pincode" fullWidth />
+  </Grid>
+  <Grid item xs={6}>
+  <MDInput type="email" label="Contact" fullWidth />
+  </Grid>
+</Grid>
             <MDBox mb={2}>
               <MDInput type="password" label="Password" fullWidth />
             </MDBox>
@@ -93,7 +99,7 @@ function Basic() {
                 sign in
               </MDButton>
             </MDBox>
-            <MDBox mt={3} mb={1} textAlign="center">
+            {/* <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
                 Don&apos;t have an account?{" "}
                 <MDTypography
@@ -107,11 +113,11 @@ function Basic() {
                   Sign up
                 </MDTypography>
               </MDTypography>
-            </MDBox>
+            </MDBox> */}
           </MDBox>
         </MDBox>
       </Card>
-    </BasicLayout>
+    </DashboardLayout>
   );
 }
 

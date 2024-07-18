@@ -68,12 +68,13 @@ function Header({ children }) {
           backgroundSize: "cover",
           backgroundPosition: "50%",
           overflow: "hidden",
+          display:"none"
         }}
       />
       <Card
         sx={{
           position: "relative",
-          mt: -8,
+         // mt: -8,
           mx: 3,
           py: 2,
           px: 2,
