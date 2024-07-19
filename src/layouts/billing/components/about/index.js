@@ -34,7 +34,27 @@ Dementia is the result of changes in certain brain regions that cause neurons (n
 
 Although some people may be diagnosed simply as having “dementia,” to best tailor treatment and prepare for the future, it is ideal to know the specific type.
 </p>
+<h5>
 
+What Are the Signs and Symptoms of Dementia?
+  
+</h5>
+<p style={{fontSize:"medium"}}>
+Many people associate dementia with memory loss. This is because memory problems are often one of the early symptoms of a dementia disorder, but they are not the only one. The symptoms of dementia can vary, depending on the type of dementia and which areas of the brain are affected. Symptoms may include:
+
+Memory loss, poor judgment, and confusion
+Changes in the ability to speak, understand, and express thoughts and/or words and to write and read
+Wandering and getting lost in a familiar neighborhood
+Trouble handling money and paying bills
+Repeating questions
+Using unusual words to refer to familiar objects
+Taking longer to complete normal daily tasks
+Loss of interest in normal daily activities or events
+Hallucinations, delusions, and paranoia
+Acting impulsively
+Not caring about other people’s feelings
+Problems with balance and movement
+</p>
         </MDBox>
       </MDBox>
     </Card>
