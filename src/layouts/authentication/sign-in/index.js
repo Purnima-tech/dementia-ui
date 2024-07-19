@@ -64,6 +64,8 @@ const handleUploadClick = event => {
   var file = event.target.files[0];
   const reader = new FileReader();
   var url = reader.readAsDataURL(file);
+  const imageURL= 'https://storage.googleapis.com/syntaximages/Charlotte%20Williams.jpg'
+  setFormData({...formData, 'patientimage': imageURL});
 
   // reader.onloadend = function(e) {
   //   this.setState({
@@ -83,6 +85,7 @@ const handleChange=(event) =>{
 }
 
 const handleSubmit = () => {
+  console.log(formData)
   fetch('http://104.199.113.211:8082/patient',{
       method: 'POST',
       headers: {
@@ -146,6 +149,18 @@ const handleSubmit = () => {
   <Grid item xs={4}>
   <MDInput type="number" label="Emergency Contact" fullWidth value={formData.emergencycontact} name='emergencycontact'  onChange={(event)=>handleChange(event)}/>
   </Grid>
+  <Grid item xs={4}>
+  {/* <MDInput type="image" label="Image" fullWidth value={formData.guardianImage} /> */}
+  <input
+              accept="image/*"
+              label='Image'
+              id="contained-button-file"
+              type="file"
+              value={formData.guardianImage}
+              onChange={handleUploadClick}
+              placeholder="Image"
+            />
+  </Grid>
 </Grid>
 <hr />
 <MDTypography pt={2} style={{fontWeight:900, fontSize: 'medium'}}>
@@ -161,18 +176,7 @@ const handleSubmit = () => {
   <Grid item xs={4}>
   <MDInput type="number" label="contact" fullWidth value={formData.guardiancontact}  name='guardiancontact' onChange={(event)=>handleChange(event)}/>
   </Grid>
-  <Grid item xs={4}>
-  {/* <MDInput type="image" label="Image" fullWidth value={formData.guardianImage} /> */}
-  <input
-              accept="image/*"
-              label='Image'
-              id="contained-button-file"
-              type="file"
-              value={formData.guardianImage}
-              onChange={handleUploadClick}
-              placeholder="Image"
-            />
-  </Grid>
+
   <Grid item xs={4}>
   <MDInput type="text" label="Address Line1" fullWidth value={formData.guardianAddress1}  name='guardianAddress1' onChange={(event)=>handleChange(event)}/>
   </Grid>
