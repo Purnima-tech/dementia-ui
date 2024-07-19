@@ -92,7 +92,8 @@ const handleSubmit = () => {
       body: JSON.stringify(formData)
   }).then(response => {
           console.log(response)
-          alert(response)
+          if(response.status == 200)
+          alert('Registration Sucessful !')
       })
       .catch(error =>{
           console.log(error)
